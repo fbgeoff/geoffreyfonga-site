@@ -268,12 +268,7 @@
   .tl-date{ font-family:'IBM Plex Mono',monospace; font-size:0.82rem; color:var(--steel); font-weight:600; }
   .tl-role{ font-family:'Sora',sans-serif; font-weight:700; font-size:1.12rem; margin-bottom:2px; color:var(--navy); }
   .tl-co{ color:var(--text-muted); font-size:0.92rem; margin-bottom:10px; font-family:'Sora',sans-serif; }
-  .tl-item ul{ margin:0; padding-left:20px; color:var(--text-muted); font-size:0.96rem; }
-  .tl-item li{ margin-bottom:6px; }
-  .tl-item .subroles{ margin-top:12px; padding-top:12px; border-top:1px dashed var(--border); }
-  .tl-item .subroles .sr{ margin-bottom:12px; }
-  .tl-item .subroles .sr-title{ font-family:'Sora',sans-serif; font-weight:600; font-size:0.95rem; color:var(--navy); }
-  .tl-item .subroles .sr-date{ font-family:'IBM Plex Mono',monospace; font-size:0.72rem; color:var(--text-faint); }
+  .tl-summary{ margin:0; color:var(--text-muted); font-size:0.96rem; max-width:68ch; }
 
   /* EDU / CERTS */
   .grid2{ display:grid; grid-template-columns:1fr 1fr; gap:20px; }
@@ -286,9 +281,6 @@
     font-family:'IBM Plex Mono',monospace; font-size:0.74rem; padding:6px 11px;
     background:var(--bg-elev); border:1px solid var(--border); border-radius:99px; color:var(--text-muted);
   }
-  .skills-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:20px; }
-  @media (max-width:820px){ .skills-grid{ grid-template-columns:1fr; } }
-  .skills-col h4{ font-family:'IBM Plex Mono',monospace; font-size:0.78rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--steel); margin-bottom:14px; }
 
   /* PORTFOLIO */
   .pf-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:22px; }
@@ -485,12 +477,7 @@
         <div>
           <div class="tl-role">Global VP, AI Strategy &amp; Success Engineering</div>
           <div class="tl-co">DataRobot · Austin, TX</div>
-          <ul>
-            <li>Own enterprise-wide adoption, enablement, and value realization for GenAI, LLM, and AutoML platforms across 200+ enterprise accounts</li>
-            <li>Build and lead a multi-regional organization across Americas, EMEA, and APAC</li>
-            <li>Design enterprise AI enablement programs — adoption frameworks, role-based training, use-case libraries — that accelerate time-to-value</li>
-            <li>Serve as executive voice of the customer to Product and Engineering leadership</li>
-          </ul>
+          <p class="tl-summary">Leading global AI adoption, enablement, and value realization across a $100M+ ARR, 200+ account enterprise portfolio.</p>
         </div>
       </div>
 
@@ -499,37 +486,16 @@
         <div>
           <div class="tl-role">Senior Engagement Manager</div>
           <div class="tl-co">McKinsey &amp; Company · North America</div>
-          <ul>
-            <li>Delivered 10+ enterprise transformation engagements over 7 years — banking, capital markets, logistics, technology — from $100M to $1B in scope</li>
-            <li>Led cross-functional teams of 5&ndash;15 consultants advising CEOs, CIOs, and CTOs on operating model design and change roadmaps</li>
-            <li>Designed AI/ML governance standards for a global investment bank, reducing operational risk exposure by 10%+ and averting an estimated $20M+ in remediation costs</li>
-            <li>Built and deployed AML and customer lifecycle AI models for a global bank, driving double-digit improvement in marketing-to-acquisition conversion</li>
-          </ul>
+          <p class="tl-summary">Delivered 10+ enterprise transformation engagements from $100M to $1B in scope, advising CEOs, CIOs, and CTOs on operating models, governance, and change.</p>
         </div>
       </div>
 
       <div class="tl-item">
         <div class="tl-date">2015 — 2019</div>
         <div>
-          <div class="tl-role">Wells Fargo</div>
-          <div class="tl-co">San Francisco, CA</div>
-          <div class="subroles">
-            <div class="sr">
-              <div class="sr-title">Vice President, Data Science</div>
-              <div class="sr-date">2017 — 2019</div>
-              <p style="margin:6px 0 0; color:var(--text-muted); font-size:0.94rem;">Led a team of quantitative analysts and PhDs delivering ML-driven consumer lending models across credit card, auto, student loan, and personal products.</p>
-            </div>
-            <div class="sr">
-              <div class="sr-title">Credit Risk Modeling &amp; Analytics Consultant</div>
-              <div class="sr-date">2016 — 2017</div>
-              <p style="margin:6px 0 0; color:var(--text-muted); font-size:0.94rem;">Developed credit risk scorecard models for mortgage and consumer real estate products, reducing default rates by 10%.</p>
-            </div>
-            <div class="sr">
-              <div class="sr-title">Credit Risk Associate</div>
-              <div class="sr-date">2015 — 2016</div>
-              <p style="margin:6px 0 0; color:var(--text-muted); font-size:0.94rem;">Built Home Mortgage statistical models using SAS and FICO Scorecard Professional; improved fraud detection accuracy by 20%.</p>
-            </div>
-          </div>
+          <div class="tl-role">Vice President, Data Science</div>
+          <div class="tl-co">Wells Fargo · San Francisco, CA</div>
+          <p class="tl-summary">Progressed from Credit Risk Associate to Vice President, building ML-driven credit risk and lending models across mortgage, auto, and card portfolios.</p>
         </div>
       </div>
 
@@ -538,10 +504,7 @@
         <div>
           <div class="tl-role">Financial Engineer</div>
           <div class="tl-co">MidFirst Bank · Oklahoma City, OK</div>
-          <ul>
-            <li>Developed Monte Carlo simulation models for PD, LGD, and EAD on commercial real estate loans — improving forecast accuracy and capital efficiency by 25%</li>
-            <li>Lead programmer on the bank's Basel II Advanced Internal Ratings-Based (AIRB) implementation</li>
-          </ul>
+          <p class="tl-summary">Built Monte Carlo risk simulation models and led the bank's Basel II AIRB implementation.</p>
         </div>
       </div>
 
@@ -550,10 +513,7 @@
         <div>
           <div class="tl-role">Sales &amp; Service Specialist</div>
           <div class="tl-co">Bank of America · Oklahoma City, OK</div>
-          <ul>
-            <li>Managed a diversified financial products portfolio spanning credit cards, CDs, IRAs, deposits, and personal loans</li>
-            <li>Drove a 10% boost in branch revenue through consultative sales and client relationship management</li>
-          </ul>
+          <p class="tl-summary">Managed a diversified financial products portfolio and drove a 10% boost in branch revenue.</p>
         </div>
       </div>
     </div>
@@ -583,32 +543,12 @@
     </div>
 
     <h3 class="mono section-label" style="margin-top:48px;">Skills</h3>
-    <div class="skills-grid" style="margin-top:8px;">
-      <div class="skills-col">
-        <h4>Enablement &amp; Change</h4>
-        <div class="tags">
-          <span class="tag">OCM</span><span class="tag">Change Readiness</span><span class="tag">Digital Adoption</span>
-          <span class="tag">AI/GenAI Enablement</span><span class="tag">Program Governance</span><span class="tag">Success Measurement</span>
-        </div>
-      </div>
-      <div class="skills-col">
-        <h4>Leadership</h4>
-        <div class="tags">
-          <span class="tag">Global Team Leadership</span><span class="tag">C-Suite Advisory</span>
-          <span class="tag">Customer Success Strategy</span><span class="tag">Revenue Expansion</span><span class="tag">Risk &amp; Compliance</span>
-        </div>
-      </div>
-      <div class="skills-col">
-        <h4>Technical</h4>
-        <div class="tags">
-          <span class="tag">GenAI / LLMs</span><span class="tag">Agentic AI</span><span class="tag">Machine Learning</span>
-          <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">SAS</span>
-        </div>
-      </div>
+    <div class="tags" style="margin-top:8px;">
+      <span class="tag">AI/GenAI Enablement</span><span class="tag">Agentic AI</span><span class="tag">Machine Learning</span>
+      <span class="tag">Change Management</span><span class="tag">Program Governance</span><span class="tag">C-Suite Advisory</span>
+      <span class="tag">Global Team Leadership</span><span class="tag">Risk &amp; Compliance</span><span class="tag">Python / SQL / SAS</span>
+      <span class="tag">Bilingual — English &amp; French</span>
     </div>
-
-    <h3 class="mono section-label" style="margin-top:48px;">Languages</h3>
-    <p class="muted" style="color:var(--text-muted); font-size:0.95rem;">Native bilingual speaker of English and French.</p>
   </section>
 
   <!-- PORTFOLIO -->

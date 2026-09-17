@@ -258,24 +258,7 @@
   }
   .summary-block p{ margin:0; color:var(--text-muted); font-size:1rem; max-width:78ch; }
 
-  /* TIMELINE */
-  .timeline{ position:relative; margin-top:8px; }
-  .tl-item{
-    display:grid; grid-template-columns:140px 1fr; gap:24px;
-    padding-block:26px; border-top:1px solid var(--border);
-  }
-  @media (max-width:640px){ .tl-item{ grid-template-columns:1fr; gap:6px; } }
-  .tl-date{ font-family:'IBM Plex Mono',monospace; font-size:0.82rem; color:var(--steel); font-weight:600; }
-  .tl-role{ font-family:'Sora',sans-serif; font-weight:700; font-size:1.12rem; margin-bottom:2px; color:var(--navy); }
-  .tl-co{ color:var(--text-muted); font-size:0.92rem; margin-bottom:10px; font-family:'Sora',sans-serif; }
-  .tl-summary{ margin:0; color:var(--text-muted); font-size:0.96rem; max-width:68ch; }
-
   /* EDU / CERTS */
-  .grid2{ display:grid; grid-template-columns:1fr 1fr; gap:20px; }
-  @media (max-width:700px){ .grid2{ grid-template-columns:1fr; } }
-  .card{ background:#fff; border:1px solid var(--border); border-radius:10px; padding:24px; }
-  .card h4{ font-family:'Sora',sans-serif; font-size:1.05rem; margin-bottom:6px; color:var(--navy); }
-  .card .muted{ color:var(--text-muted); font-size:0.9rem; }
   .tags{ display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
   .tag{
     font-family:'IBM Plex Mono',monospace; font-size:0.74rem; padding:6px 11px;
@@ -470,64 +453,31 @@
       <p>Executive leader with 15+ years of experience driving enterprise technology transformation, AI/GenAI adoption, and organizational change across Fortune 500 organizations. Currently leads DataRobot&rsquo;s global AI Success Engineering function, driving AI adoption, enablement, and value realization across a $100M+ ARR portfolio. Former McKinsey Senior Engagement Manager with experience leading $100M&ndash;$1B transformation programs and advising CEOs, CIOs, and CTOs on technology strategy, operating models, governance, and execution. Combines deep expertise in AI, data science, and technology with a proven track record of building high-performing global teams, aligning senior stakeholders, and translating complex technology investments into measurable business outcomes.</p>
     </div>
 
-    <h3 class="mono section-label" style="margin-top:56px;">Experience</h3>
-    <div class="timeline">
-      <div class="tl-item">
-        <div class="tl-date">2026 — Present</div>
-        <div>
-          <div class="tl-role">Global VP, AI Strategy &amp; Success Engineering</div>
-          <div class="tl-co">DataRobot · Austin, TX</div>
-          <p class="tl-summary">Leading global AI adoption, enablement, and value realization across a $100M+ ARR, 200+ account enterprise portfolio.</p>
-        </div>
+    <h3 class="mono section-label" style="margin-top:56px;">Career Highlights</h3>
+    <div class="svc-list" style="margin-top:8px;">
+      <div class="svc-item">
+        <div class="svc-num">01</div>
+        <div><p>Own the AI adoption strategy behind a $100M+ ARR, 200+ account enterprise portfolio as DataRobot&rsquo;s Global VP of AI Strategy &amp; Success Engineering.</p></div>
       </div>
-
-      <div class="tl-item">
-        <div class="tl-date">2019 — 2026</div>
-        <div>
-          <div class="tl-role">Senior Engagement Manager</div>
-          <div class="tl-co">McKinsey &amp; Company · North America</div>
-          <p class="tl-summary">Delivered 10+ enterprise transformation engagements from $100M to $1B in scope, advising CEOs, CIOs, and CTOs on operating models, governance, and change.</p>
-        </div>
+      <div class="svc-item">
+        <div class="svc-num">02</div>
+        <div><p>Advised Fortune 500 CEOs, CIOs, and CTOs on $100M&ndash;$1B enterprise transformations as a McKinsey Senior Engagement Manager.</p></div>
       </div>
-
-      <div class="tl-item">
-        <div class="tl-date">2015 — 2019</div>
-        <div>
-          <div class="tl-role">Vice President, Data Science</div>
-          <div class="tl-co">Wells Fargo · San Francisco, CA</div>
-          <p class="tl-summary">Progressed from Credit Risk Associate to Vice President, building ML-driven credit risk and lending models across mortgage, auto, and card portfolios.</p>
-        </div>
+      <div class="svc-item">
+        <div class="svc-num">03</div>
+        <div><p>Averted an estimated $20M+ in remediation costs by designing AI/ML governance standards for a global investment bank.</p></div>
       </div>
-
-      <div class="tl-item">
-        <div class="tl-date">2012 — 2014</div>
-        <div>
-          <div class="tl-role">Financial Engineer</div>
-          <div class="tl-co">MidFirst Bank · Oklahoma City, OK</div>
-          <p class="tl-summary">Built Monte Carlo risk simulation models and led the bank's Basel II AIRB implementation.</p>
-        </div>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-date">2010 — 2011</div>
-        <div>
-          <div class="tl-role">Sales &amp; Service Specialist</div>
-          <div class="tl-co">Bank of America · Oklahoma City, OK</div>
-          <p class="tl-summary">Managed a diversified financial products portfolio and drove a 10% boost in branch revenue.</p>
-        </div>
+      <div class="svc-item">
+        <div class="svc-num">04</div>
+        <div><p>Promoted from Credit Risk Associate to Vice President, Data Science in four years at Wells Fargo, building the ML models behind national-scale lending decisions.</p></div>
       </div>
     </div>
 
     <h3 class="mono section-label" style="margin-top:56px;">Education</h3>
-    <div class="grid2">
-      <div class="card">
-        <h4>Master of Science — Applied Mathematics &amp; Finance</h4>
-        <div class="muted">University of Tulsa · Tulsa, OK · GPA 3.9</div>
-      </div>
-      <div class="card">
-        <h4>Bachelor of Science — Business Administration &amp; MIS</h4>
-        <div class="muted">East Central University · Ada, OK · Summa Cum Laude · GPA 4.0</div>
-      </div>
+    <div class="tags" style="margin-top:8px;">
+      <span class="tag">M.S., Applied Mathematics</span>
+      <span class="tag">M.S., Finance</span>
+      <span class="tag">B.S., Business Administration &amp; MIS</span>
     </div>
 
     <div style="margin-top:48px;">
